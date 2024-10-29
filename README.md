@@ -10,3 +10,4 @@ Pada aplikasi ini, user dapat menambahkan, membaca, mengedit, dan menghapus blog
 ## Fitur yang akan diubah dan ditambah
 1. Kustomisasi UI/UX, karena masih mengikuti contoh.
 2. Role Permission
+3. reCaptcha
