@@ -40,7 +40,7 @@
                     Don't have an account? <a href="{{ route('register') }}">Register</a>
                 </div>
                 <div class="card-footer text-muted text-center">
-                    Forgot your password? <a href="{{ route('password.request') }}">Forgot Password</a>
+                    <a href="{{ route('password.request') }}">Forgot your Password?</a>
                 </div>
             </div>
         </div>
