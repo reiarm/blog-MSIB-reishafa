@@ -8,10 +8,29 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+
+    public function home()
+    {
+        $posts = Post::where('is_published', 1)->get();
+        return view('home', ['posts' => $posts]);
+    }
+
     public function index()
     {
         $posts = Post::with('category')->get();
         return view('posts.index', compact('posts'));
+    }
+
+
+    public function show($id)
+    {
+        $post = Post::find($id);
+
+        if (!$post) {
+            abort(404, 'Post not found');
+        }
+
+        return view('posts.show', compact('post'));
     }
 
     public function create()
